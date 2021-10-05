@@ -12,6 +12,10 @@
                 <MenuItem Header="Registros">
                     <MenuItem Header="Aportes" x:Name="AportesMenuItem" Click="AportesMenuItem_Click"></MenuItem>
                 </MenuItem>
+
+                <MenuItem Header="Consultar">
+                    <MenuItem Header="Aportes" x:Name="consultasAportes" Click="consultasAportes_Click"></MenuItem>
+                </MenuItem>
             </Menu>
         </StackPanel>
     </Grid>

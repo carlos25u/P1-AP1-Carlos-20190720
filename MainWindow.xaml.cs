@@ -1,4 +1,5 @@
-﻿using P1_AP1_Carlos_20190720.UI.Registros;
+﻿using P1_AP1_Carlos_20190720.UI.Consultas;
+using P1_AP1_Carlos_20190720.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,12 @@ namespace P1_AP1_Carlos_20190720
         {
             rAportes aportes = new rAportes();
             aportes.Show();
+        }
+
+        private void consultasAportes_Click(object sender, RoutedEventArgs e)
+        {
+            cAportes consultas = new cAportes();
+            consultas.Show();
         }
     }
 }
