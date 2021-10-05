@@ -1,4 +1,5 @@
-﻿using System;
+﻿using P1_AP1_Carlos_20190720.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace P1_AP1_Carlos_20190720
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void AportesMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rAportes aportes = new rAportes();
+            aportes.Show();
         }
     }
 }
