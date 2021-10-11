@@ -36,11 +36,7 @@ namespace P1_AP1_Carlos_20190720.UI.Registros
             this.aportes = new Aportes();
             this.DataContext = aportes;
 
-            aporteIDTextBox.Text = "";
             fechaDatePicker.SelectedDate = DateTime.Now;
-            personaTextBox.Text = "";
-            conceptoTextBox.Text = "";
-            montoTextBox.Text = "";
         }
 
         private bool Validar()
@@ -88,11 +84,6 @@ namespace P1_AP1_Carlos_20190720.UI.Registros
 
             if (ciudad != null)
             {
-                fechaDatePicker.SelectedDate = aportes.fechaAporte;
-                personaTextBox.Text = aportes.persona;
-                conceptoTextBox.Text = aportes.concepto;
-                montoTextBox.Text = aportes.monto.ToString();
-
                 this.aportes = ciudad;
             }
             else
@@ -111,11 +102,6 @@ namespace P1_AP1_Carlos_20190720.UI.Registros
         {
             if (!Validar())
                 return;
-
-            aportes.fechaAporte = fechaDatePicker.SelectedDate.Value;
-            aportes.persona = personaTextBox.Text;
-            aportes.concepto = conceptoTextBox.Text;
-            aportes.monto = int.Parse(montoTextBox.Text);
 
             var paso = AportesBLL.Guardar(aportes);
             if (paso)

@@ -62,6 +62,8 @@ namespace P1_AP1_Carlos_20190720.UI.Consultas
 
             DatosDataDrid.ItemsSource = null;
             DatosDataDrid.ItemsSource = listado;
+
+            conteo = 0;
         }
 
     }
